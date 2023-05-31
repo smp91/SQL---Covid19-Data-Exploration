@@ -43,7 +43,7 @@ ORDER BY location, date
 
 
 -- Total Cases vs Total Deaths
--- Likelyhood of dying if you contract Covid in Canada
+-- Likelihood of dying if you contract Covid in Canada
 
 SELECT location, date, total_cases, total_deaths, ROUND(((CAST(total_deaths AS FLOAT)/CAST(total_cases AS FLOAT)))*100,2) AS DeathPercentage
 FROM CovidDeaths
